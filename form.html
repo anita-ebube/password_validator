@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
-</head>
-<body>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <h1>Registration Form</h1>
+      <div class="header">
+        <h1>Registration Form</h1>
+      </div>
+      <form action="" id="form" class="form-box">
+        <div class="inputbox">
+          <label for="">Username Name</label>
+          <input type="text" id="username" placeholder="John Amos" />
+          <ion-icon
+            name="checkmark-circle-outline"
+            class="success-icon"
+          ></ion-icon>
+          <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+          <small>User cannot be empty</small>
         </div>
-        <form action="" id="form" class="form-box">
-                    
-            <div class="inputbox success">
-                <label for="">Username Name</label>
-                <input type="text" id="username" placeholder="John Amos">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <ion-icon name="alert-circle-outline"></ion-icon>
-                <small>User cannot be empty</small>
-            </div>
-            
-            <div class="inputbox">
-                <label for="">Email</label>
-                <input type="email" id="email" placeholder="john@gmail.com">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <ion-icon name="alert-circle-outline"></ion-icon>
-                <small>email cannot be empty</small>
-            </div>
-            <!-- <div class="inputbox">
+
+        <div class="inputbox">
+          <label for="">Email</label>
+          <input type="email" id="email" placeholder="john@gmail.com" />
+          <ion-icon
+            name="checkmark-circle-outline"
+            class="success-icon"
+          ></ion-icon>
+          <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+          <small>email cannot be empty</small>
+        </div>
+        <!-- <div class="inputbox">
                 <label for="">Date Of Birth</label>
                 <input type="date">
                 <small>User cannot be empty</small>
             </div> -->
-            <div class="inputbox">
-                <label for="">Country</label>
-                <input type="text" placeholder="Abuja">
-                <small>email cannot be empty</small>
-            </div>
-            <div class="inputbox error">
-                <label for="">Password</label>
-                <input type="password" id="password">
-                <!-- <ion-icon    name="checkmark-circle-outline"></ion-icon> -->
-                <ion-icon name="alert-circle-outline"></ion-icon>
-                <small>email cannot be empty</small>
-            </div>
-            <div class="inputbox ">
-                <label for="">Confirm Password</label>
-                <input type="password" id="confirmpasword">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <ion-icon name="alert-circle-outline"></ion-icon>
-                <small>email cannot be empty</small>
-            </div>
-            <!-- <div class="forget">
+        <div class="inputbox">
+          <label for="country">Country</label>
+          <input type="text" placeholder="Abuja" id="country" />
+          <small>Country cannot be empty</small>
+        </div>
+        <div class="inputbox">
+          <label for="">Password</label>
+          <input type="password" id="password" />
+          <ion-icon
+            name="checkmark-circle-outline"
+            class="success-icon"
+          ></ion-icon>
+          <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+          <small>Password cannot be empty</small>
+        </div>
+        <div class="inputbox">
+          <label for="">Confirm Password</label>
+          <input type="password" id="confirmpassword" />
+          <ion-icon
+            name="checkmark-circle-outline"
+            class="success-icon"
+          ></ion-icon>
+          <ion-icon name="alert-circle-outline" class="error-icon"></ion-icon>
+          <small>Confirm password cannot be empty</small>
+        </div>
+        <!-- <div class="forget">
                 <label for=""><input type="checkbox">Rember me</label>
                 <a href="">Forgot Password</a>
             </div> -->
-            <button id="login"> Login</button>
-            <!-- <div class="register">
+        <button id="login">Login</button>
+        <!-- <div class="register">
                 <p>Dont have account <a href="">Register</a></p>
             </div> -->
-        </form>
-
+      </form>
     </div>
-    
-   <!-- <script src="./form.js"></script> -->
-   <script src="./form2.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+
+    <!-- <script src="./form.js"></script> -->
+    <script src="./form2.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
